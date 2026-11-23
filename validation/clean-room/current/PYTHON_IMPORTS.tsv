@@ -1,0 +1,18 @@
+relative_path	imports
+src/gene_retrieval/__init__.py	
+src/gene_retrieval/evaluation/__init__.py	
+src/gene_retrieval/evaluation/authorization.py	__future__; hashlib; hmac; json; os; pathlib; re; secrets
+src/gene_retrieval/evaluation/build_manifest.py	__future__; argparse; hashlib; os; pathlib
+src/gene_retrieval/evaluation/ranking.py	__future__; collections; dataclasses; math; numpy; statistics; typing
+src/gene_retrieval/harmonization/__init__.py	
+src/gene_retrieval/harmonization/contracts.py	__future__; collections; dataclasses; enum; math; typing
+src/gene_retrieval/harmonization/reference_utils.py	__future__; collections.abc; gzip; pathlib; re
+tests/synthetic/conftest.py	os; pathlib; pytest; shutil; tempfile; uuid
+tests/synthetic/test_authorization.py	gene_retrieval.evaluation.authorization; hashlib; json; pytest
+tests/synthetic/test_authorization_edges.py	gene_retrieval.evaluation; hashlib; json; pytest
+tests/synthetic/test_contracts.py	__future__; gene_retrieval.harmonization.contracts; pytest
+tests/synthetic/test_fixtures.py	collections; csv; gene_retrieval.evaluation.ranking; pathlib
+tests/synthetic/test_manifest.py	csv; gene_retrieval; gene_retrieval.evaluation.build_manifest; pathlib; pytest
+tests/synthetic/test_package_and_reference.py	gene_retrieval.harmonization; gzip; importlib; importlib.metadata; pytest
+tests/synthetic/test_ranking.py	__future__; gene_retrieval.evaluation.ranking; numpy
+validation/clean-room/current/run_cleanroom.py	__future__; argparse; csv; hashlib; json; os; pathlib; platform; re; shutil; subprocess; sys

@@ -1,0 +1,57 @@
+{
+  "phase": "suite",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "implementation": "cpython",
+  "distributions": [
+    [
+      "Pygments",
+      "2.21.0"
+    ],
+    [
+      "colorama",
+      "0.4.6"
+    ],
+    [
+      "gene-retrieval-toolkit",
+      "0.1.0"
+    ],
+    [
+      "iniconfig",
+      "2.3.1"
+    ],
+    [
+      "numpy",
+      "2.5.5"
+    ],
+    [
+      "packaging",
+      "26.3"
+    ],
+    [
+      "pip",
+      "25.0.1"
+    ],
+    [
+      "pluggy",
+      "1.7.0"
+    ],
+    [
+      "pytest",
+      "9.2.0"
+    ],
+    [
+      "setuptools",
+      "80.9.0"
+    ],
+    [
+      "wheel",
+      "0.45.1"
+    ]
+  ],
+  "isolated": true,
+  "bytecode_disabled": true,
+  "user_site": false,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "validated_input_manifest_sha256": "118a03ee5eefdfe72529dabfc37c0b958524f8124b4252bbdc5fbaa1eb251bc4"
+}

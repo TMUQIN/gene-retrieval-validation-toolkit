@@ -1,0 +1,9 @@
+field_name	type	required	allowed_or_format	definition
+dataset_id	string	TRUE	stable dataset ID	external truth dataset
+query_id	string	TRUE	candidate-universe query ID	decision unit
+truth_gene_id	string	TRUE	versionless Ensembl gene ID	one row per accepted true gene
+truth_type	categorical	TRUE	COLOCALIZED_EQTL|COLOCALIZED_SQTL|CRE_GENE_PERTURBATION|OTHER_APPROVED	biological endpoint
+truth_source_id	string	TRUE	DOI/accession/release	source lineage key
+source_collision_class	categorical	TRUE	INDEPENDENT|POTENTIAL_OVERLAP|SAME_SOURCE|DIRECT_COLLISION|UNKNOWN	method-specific source relationship after join
+provenance_id	string	TRUE	manifest key	download and harmonization lineage
+

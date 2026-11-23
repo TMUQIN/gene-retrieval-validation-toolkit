@@ -1,0 +1,7 @@
+collision_class	definition	strict_layer_eligible	minimum_audit	examples
+STRICT_SOURCE_INDEPENDENT_COMMON_SUPPORT	row-level audit supports independent source and endpoint	YES	source IDs; row overlap; endpoint distinction; release hashes	independent post-freeze eQTL/sQTL/CRISPR evidence
+ALL_COMMON_SUPPORT	common support with no proven direct collision but not strict independent	NO for strict; YES for broad descriptive layer	shared source inventory and overlap checks	shared public annotation
+POTENTIAL_OVERLAP	possible overlap not resolved at row level	NO until audit	variant/gene/locus overlap audit	shared GWAS or assay collection
+DIRECT_COLLISION	direct row-level overlap or released resource collision	NO	exact row/key comparison and hashes	same CRISPR relation or identical released record
+SAME_SOURCE	truth and evidence originate from the same source lineage	NO	source lineage record	same study/same assay source
+UNKNOWN	independence cannot be determined	NO	missing provenance is itself reported	unresolved resource

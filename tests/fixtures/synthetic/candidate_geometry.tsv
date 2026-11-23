@@ -1,0 +1,13 @@
+query_id	unified_locus_id	variant	candidate_gene_id	distance_to_tss_bp	candidate_order_key	candidate_present
+q1	L1	sv1	sg1	10	sg1	1
+q1	L1	sv1	d1	20	d1	1
+q1	L1	sv1	d2	30	d2	1
+q2	L2	sv2	sg2	10	sg2	1
+q2	L2	sv2	sg3	20	sg3	1
+q2	L2	sv2	d3	30	d3	1
+q3	L3	sv3	sg4	10	sg4	1
+q3	L3	sv3	sg5	20	sg5	1
+q3	L3	sv3	d4	30	d4	1
+q4	L4	sv4	sg6	10	sg6	1
+q4	L4	sv4	d5	20	d5	1
+q4	L4	sv4	d6	30	d6	1

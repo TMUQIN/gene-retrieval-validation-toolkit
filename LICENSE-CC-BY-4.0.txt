@@ -1,0 +1,21 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This notice applies only to the materials listed in LICENSES.md.
+
+License deed:
+https://creativecommons.org/licenses/by/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution notice:
+"Gene Retrieval Toolkit contributors (2026), Gene Retrieval Validation Toolkit,
+licensed under CC BY 4.0."
+
+You must provide appropriate credit, link to the license, and indicate whether
+changes were made. The license permits sharing and adaptation, including
+commercial reuse, subject to its terms.
+
+This notice does not license third-party material, upstream datasets, software
+dependencies, AlphaGenome outputs or derivatives, patient data, or any material
+expressly excluded elsewhere in this repository.

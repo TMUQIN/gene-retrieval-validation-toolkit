@@ -1,0 +1,9 @@
+check	status	detail
+reviewed_source_boundary	PASS	original 55 member paths plus exactly three supplied license files
+runtime_schema_fixture_integrity	PASS	8 runtime files, 5 schemas/design files and 2 synthetic fixtures byte-identical to source ZIP
+source_version	PASS	metadata and installed distribution are 0.1.0; import namespace unchanged
+license_inputs	PASS	three license files match supplied kit; README license section appended verbatim
+execution_input_integrity	PASS	35 validated inputs match source and copied snapshot
+installed_runtime_integrity	PASS	8 installed Python files match source
+scope_exclusions	PASS	no internal history/materials, model outputs, real data, credentials or third-party assets introduced
+publication_state	PASS	local candidate only; no Git/remote/Release/DOI/Zenodo action

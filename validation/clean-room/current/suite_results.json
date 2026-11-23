@@ -1,0 +1,363 @@
+{
+  "checks": [
+    {
+      "check": "audit_probe_outside_read",
+      "status": "PASS",
+      "detail": "synthetic event rejected before operation"
+    },
+    {
+      "check": "audit_probe_network_event",
+      "status": "PASS",
+      "detail": "synthetic event rejected before operation"
+    },
+    {
+      "check": "audit_probe_subprocess_event",
+      "status": "PASS",
+      "detail": "synthetic event rejected before operation"
+    },
+    {
+      "check": "fresh_venv",
+      "status": "PASS",
+      "detail": "venv active; user site disabled"
+    },
+    {
+      "check": "no_source_path_injection",
+      "status": "PASS",
+      "detail": "src absent from sys.path"
+    },
+    {
+      "check": "no_system_site_packages",
+      "status": "PASS",
+      "detail": "base global packages absent"
+    },
+    {
+      "check": "noneditable_install",
+      "status": "PASS",
+      "detail": "imported fresh venv installation"
+    },
+    {
+      "check": "exact_numpy",
+      "status": "PASS",
+      "detail": "2.5.5"
+    },
+    {
+      "check": "exact_pytest",
+      "status": "PASS",
+      "detail": "9.2.0"
+    },
+    {
+      "check": "metadata_runtime_dependency",
+      "status": "PASS",
+      "detail": "NumPy sole runtime dependency"
+    },
+    {
+      "check": "complete_synthetic_suite",
+      "status": "PASS",
+      "detail": "56 cases; no skips permitted"
+    },
+    {
+      "check": "nine_original_test_functions",
+      "status": "PASS",
+      "detail": "9 inherited tests with qualified imports"
+    },
+    {
+      "check": "no_unexpected_boundary_attempts",
+      "status": "PASS",
+      "detail": "only intentional audit probes rejected"
+    }
+  ],
+  "tests": [
+    {
+      "nodeid": "tests/synthetic/test_authorization.py::test_formal_truth_access_is_fail_closed",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_denies_invalid_inputs[malformed]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_denies_invalid_inputs[scope]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_denies_invalid_inputs[empty_token]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_denies_invalid_inputs[environment]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_returns_receipt_without_plaintext",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_filename-../outside.txt]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[receipt_filename-../outside.json]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_filename-..\\\\outside.txt]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[receipt_filename-C:relative.json]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_filename-C:\\\\outside.txt]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[receipt_filename-\\\\\\\\server\\\\share\\\\receipt.json]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_filename-]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[receipt_filename-.]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_filename-bad\\x00name]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[receipt_filename-approval.txt]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[environment_variable-]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[environment_variable-NOT A NAME]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_scope-]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_configuration[authorization_scope-None]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_absolute_paths[authorization_filename]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_absolute_paths[receipt_filename]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_workspace[absent]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_workspace[file]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[payload0]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[None]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[text]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[3]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[payload4]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[payload5]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[payload6]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_invalid_receipt_structure[payload7]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_unreadable_text[authorization_filename]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_rejects_unreadable_text[receipt_filename]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_authorization_edges.py::test_authorization_uses_all_custom_settings",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_contracts.py::test_candidate_contract_accepts_grch38_complete_set",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_contracts.py::test_candidate_contract_rejects_truth_contact_and_size_mismatch",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_contracts.py::test_truth_contract_accepts_multiple_true_genes",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_contracts.py::test_score_contract_keeps_missingness_out_of_numeric_scores",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_fixtures.py::test_artificial_geometry_format_and_content",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_fixtures.py::test_artificial_truth_format_and_links",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_fixtures.py::test_artificial_distance_ranking_example",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_manifest.py::test_manifest_containment_and_self_exclusion",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_manifest.py::test_installed_manifest_requires_explicit_root",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_qualified_package_imports[evaluation.authorization]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_qualified_package_imports[evaluation.build_manifest]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_qualified_package_imports[evaluation.ranking]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_qualified_package_imports[harmonization.contracts]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_qualified_package_imports[harmonization.reference_utils]",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_reference_streams_artificial_fasta",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_variant_helpers_and_normalization",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_package_and_reference.py::test_normalization_does_not_validate_ref_or_build",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_ranking.py::test_ties_are_stable_and_multi_truth_uses_first_true_gene",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_ranking.py::test_incomplete_or_missing_candidate_score_abstains_whole_query",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_ranking.py::test_common_support_has_explicit_strict_source_layer",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/synthetic/test_ranking.py::test_cluster_bootstrap_is_deterministic_and_reports_loci",
+      "outcome": "passed"
+    }
+  ],
+  "metadata": {
+    "phase": "suite",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "implementation": "cpython",
+    "distributions": [
+      [
+        "Pygments",
+        "2.21.0"
+      ],
+      [
+        "colorama",
+        "0.4.6"
+      ],
+      [
+        "gene-retrieval-toolkit",
+        "0.1.0"
+      ],
+      [
+        "iniconfig",
+        "2.3.1"
+      ],
+      [
+        "numpy",
+        "2.5.5"
+      ],
+      [
+        "packaging",
+        "26.3"
+      ],
+      [
+        "pip",
+        "25.0.1"
+      ],
+      [
+        "pluggy",
+        "1.7.0"
+      ],
+      [
+        "pytest",
+        "9.2.0"
+      ],
+      [
+        "setuptools",
+        "80.9.0"
+      ],
+      [
+        "wheel",
+        "0.45.1"
+      ]
+    ],
+    "isolated": true,
+    "bytecode_disabled": true,
+    "user_site": false
+  },
+  "blocked": [
+    {
+      "event": "open",
+      "probe": true
+    },
+    {
+      "event": "socket.connect",
+      "probe": true
+    },
+    {
+      "event": "subprocess.Popen",
+      "probe": true
+    }
+  ]
+}

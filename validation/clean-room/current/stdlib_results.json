@@ -1,0 +1,98 @@
+{
+  "checks": [
+    {
+      "check": "audit_probe_outside_read",
+      "status": "PASS",
+      "detail": "synthetic event rejected before operation"
+    },
+    {
+      "check": "audit_probe_network_event",
+      "status": "PASS",
+      "detail": "synthetic event rejected before operation"
+    },
+    {
+      "check": "audit_probe_subprocess_event",
+      "status": "PASS",
+      "detail": "synthetic event rejected before operation"
+    },
+    {
+      "check": "fresh_venv",
+      "status": "PASS",
+      "detail": "venv active; user site disabled"
+    },
+    {
+      "check": "no_source_path_injection",
+      "status": "PASS",
+      "detail": "src absent from sys.path"
+    },
+    {
+      "check": "no_system_site_packages",
+      "status": "PASS",
+      "detail": "base global packages absent"
+    },
+    {
+      "check": "stdlib_import_contracts",
+      "status": "PASS",
+      "detail": "imported before NumPy/pytest installation"
+    },
+    {
+      "check": "stdlib_import_reference_utils",
+      "status": "PASS",
+      "detail": "imported before NumPy/pytest installation"
+    },
+    {
+      "check": "stdlib_import_authorization",
+      "status": "PASS",
+      "detail": "imported before NumPy/pytest installation"
+    },
+    {
+      "check": "stdlib_import_build_manifest",
+      "status": "PASS",
+      "detail": "imported before NumPy/pytest installation"
+    },
+    {
+      "check": "no_scientific_packages_yet",
+      "status": "PASS",
+      "detail": "neither dependency installed"
+    },
+    {
+      "check": "stdlib_artificial_fasta",
+      "status": "PASS",
+      "detail": "literal sequence across lines"
+    },
+    {
+      "check": "stdlib_authorization_fail_closed",
+      "status": "PASS",
+      "detail": "no authorization inputs supplied"
+    },
+    {
+      "check": "stdlib_contract_rejects_empty",
+      "status": "PASS",
+      "detail": "empty artificial input rejected"
+    },
+    {
+      "check": "no_unexpected_boundary_attempts",
+      "status": "PASS",
+      "detail": "only intentional audit probes rejected"
+    }
+  ],
+  "tests": [],
+  "metadata": {
+    "phase": "stdlib",
+    "distributions": []
+  },
+  "blocked": [
+    {
+      "event": "open",
+      "probe": true
+    },
+    {
+      "event": "socket.connect",
+      "probe": true
+    },
+    {
+      "event": "subprocess.Popen",
+      "probe": true
+    }
+  ]
+}

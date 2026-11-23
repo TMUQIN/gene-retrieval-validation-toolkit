@@ -1,0 +1,18 @@
+field_name	type	required	allowed_or_format	definition
+dataset_id	string	TRUE	stable source-specific ID	external dataset identifier
+query_id	string	TRUE	stable unique ID	variant or CRE decision unit
+unified_locus_id	string	TRUE	stable locus ID	bootstrap cluster; never truth-derived
+unit_type	categorical	TRUE	VARIANT|CRE	input biological unit
+chromosome	string	TRUE	chr1-chr22|chrX|chrY	GRCh38 chromosome
+start_1based	integer	TRUE	>=1	inclusive GRCh38 start
+end_1based	integer	TRUE	>=start	inclusive GRCh38 end
+ref_allele	string	VARIANT only	ACGT+	reference allele after normalization
+alt_allele	string	VARIANT only	ACGT+	alternate allele after normalization
+candidate_gene_id	string	TRUE	versionless Ensembl gene ID	primary stable gene key
+candidate_gene_symbol	string	FALSE	text	display label only
+tss_position_1based	integer	TRUE	>=1	TSS in frozen annotation release
+distance_to_tss_bp	integer	TRUE	>=0	minimum absolute distance to eligible TSS
+candidate_set_size	integer	TRUE	>=1	rows for this query
+genome_build	string	TRUE	GRCh38	canonical evaluation build
+provenance_id	string	TRUE	manifest key	source and transformation lineage
+

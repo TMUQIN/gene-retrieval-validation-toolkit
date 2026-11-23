@@ -1,0 +1,14 @@
+field_name	logical_type	required	allowed_or_format	definition	provenance_requirement
+unified_locus_id	string	TRUE	stable non-empty ID	locus grouping key; no truth-derived construction	freeze manifest and hash
+variant_id	string	TRUE	stable variant key	variant identifier after build/allele harmonization	build and normalization record
+chromosome	string	TRUE	GRCh38 chromosome	reference chromosome	reference manifest
+position	integer	TRUE	1-based positive	variant position in frozen build	build/liftover record
+ref_allele	string	TRUE	ACGT	reference allele	reference allele check
+alt_allele	string	TRUE	ACGT	alternate allele	allele harmonization record
+candidate_gene_id	string	TRUE	GENCODE namespace/version	candidate gene identifier	annotation release/hash
+candidate_gene_symbol	string	FALSE	UTF-8 text	human-readable symbol; not primary key	annotation release/hash
+tss_position	integer	TRUE	positive coordinate	TSS used for distance comparator	annotation release/hash
+distance_to_tss_bp	integer	TRUE	non-negative	absolute variant-to-TSS distance	deterministic distance algorithm hash
+candidate_size	integer	TRUE	positive	candidate genes at the locus	candidate-universe freeze hash
+split	string	TRUE	development|held_out|excluded	predefined split assignment	split manifest/hash
+scope_status	string	TRUE	IN_SCOPE|OUT_OF_MODEL_SCOPE	model scope status; not a performance result	model scope contract

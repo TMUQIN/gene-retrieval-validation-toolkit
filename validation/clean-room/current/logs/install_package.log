@@ -1,0 +1,11 @@
+Processing [clean-room]\snapshot
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: gene-retrieval-toolkit
+  Building wheel for gene-retrieval-toolkit (pyproject.toml): started
+  Building wheel for gene-retrieval-toolkit (pyproject.toml): finished with status 'done'
+  Created wheel for gene-retrieval-toolkit: filename=gene_retrieval_toolkit-0.1.0-py3-none-any.whl size=18194 sha256=f7d026ca5cca96cf9b421a3e8df1606c9c26fad28749237b7b7b0b8a7ded1c80
+  Stored in directory: [clean-room]\tmp\pip-ephem-wheel-cache-3f106484679641159a35dd47a65ca14b\wheels\79\e3\78\8b04a76d827f86d83e8982f45958ac409dbb96dae064d1f589
+Successfully built gene-retrieval-toolkit
+Installing collected packages: gene-retrieval-toolkit
+Successfully installed gene-retrieval-toolkit-0.1.0

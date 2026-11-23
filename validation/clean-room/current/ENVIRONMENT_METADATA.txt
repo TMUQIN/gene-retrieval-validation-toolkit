@@ -1,0 +1,38 @@
+Test date: 2026-11-20 (Asia/Shanghai)
+Release: Gene Retrieval Validation Toolkit v0.1.0
+Distribution: gene-retrieval-toolkit==0.1.0
+Import namespace: gene_retrieval
+Platform: Windows-11-10.0.26200-SP0
+Architecture: AMD64
+Python: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+Source: reviewed 55-member ZIP; no old Git history used
+Source ZIP SHA256: 72004613b4ab2892b46a4c82d23b5c5c0221eb8a4e1a243102ac855c68385f9c
+Validated input-manifest SHA256: 118a03ee5eefdfe72529dabfc37c0b958524f8124b4252bbdc5fbaa1eb251bc4
+Fresh venv: no reuse; no inherited system/user packages; outside release directory
+Installation: non-editable package in fresh site-packages
+Execution: isolated UTF-8 Python; bytecode/plugin autoload disabled
+Direct runtime/test dependencies: numpy==2.5.5; pytest==9.2.0
+Other runtime helpers: standard library only
+Setup/build tools: pip==25.0.1; setuptools==80.9.0; wheel==0.45.1
+pip check: No broken requirements found
+Synthetic cases: 56 passed; 0 failed; 0 skipped
+Inherited regression functions: 9 passed; additional cases: 47 passed
+Execution/check records: 87 PASS; includes cases, not 87 independent tests
+Validated inputs unchanged: 35/35, source and snapshot
+Installed runtime source hashes: 8/8 match
+Test API/model/network use: none; setup-only PyPI package downloads
+Boundary instrumentation: Python audit hooks, not full OS/native tracing
+License plan: scoped MIT / CC BY 4.0 from supplied kit; dependency terms unaffected
+Pins: tested versions, not minimum support/full lock; no cross-platform claim
+Installed distributions:
+  Pygments==2.21.0
+  colorama==0.4.6
+  gene-retrieval-toolkit==0.1.0
+  iniconfig==2.3.1
+  numpy==2.5.5
+  packaging==26.3
+  pip==25.0.1
+  pluggy==1.7.0
+  pytest==9.2.0
+  setuptools==80.9.0
+  wheel==0.45.1

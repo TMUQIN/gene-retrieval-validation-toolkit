@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gene-retrieval-toolkit"
+version = "0.1.0"
+description = "Reusable Python utilities for gene retrieval evaluation, validation, and reference harmonization"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.5.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/synthetic"]
+addopts = "--import-mode=importlib"
